@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(bgMeme.jpeg) no-repeat;
+    background-size: cover;
+}
+header{
+    position: absolute;
+    height: 15vh;
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.navbar{
+    padding: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+.logo{
+    color: rgba(222, 0, 44, 0.872);
+    font-family: 'Cute Font', sans-serif;
+    font-size: 55px;
+    user-select: none;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(164, 148, 148);
+    font-size: 43px;
+    margin: 15px;
+    font-weight: 800;
+    font-family: 'Cute Font', sans-serif;
+}
+.links a:hover{
+    color: rgba(222, 0, 44, 0.872);
+    text-shadow: 0px 0px 0px rgba(222, 0, 44, 0.872),0px 0px 40px rgba(222, 0, 44, 0.872);
+    transition-duration: .7s;
+    
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.img{
+    border: 4px solid rgba(222, 0, 44, 0.872);
+    border-radius: 13px;
+    box-shadow: 0px 0px 30px rgb(123, 71, 71) ;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Cute Font', sans-serif;
+
+}
+/* .img img{
+    border-radius: 13px;
+    box-shadow: 0px 0px 30px rgb(123, 71, 71) ;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Cute Font', sans-serif;
+    visibility: hidden;
+} */
+
+.pookie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greet{
+    
+    font-family: 'Sevillana', cursive;
+    color: rgb(123, 57, 57);
+}
+.greet h1{
+    font-size: 40px;
+}
+.greet span{
+    color: rgba(222, 0, 44, 0.872);
+    font-size: 50px;
+}
+.greet h2{
+    font-size: 30px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    margin: 16px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 55px;
+    color: #fff;
+    /* font-size: 17px; */
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #e3aaaa;
+    transition: .1s;
+}
+.btn button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(123, 71, 71) 17.8%,rgba(222, 0, 44, 0.872) 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.btn button:active{
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(123, 71, 71)  17.8%, rgba(222, 0, 44, 0.872) 100.2%);
+    transition: 0.5s;
+}
+.btn button:hover{
+    transform: scale(1.1) rotate(3deg);
+}
